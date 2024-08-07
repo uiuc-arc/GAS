@@ -1,0 +1,6 @@
+dumps/
+__pycache__/
+*.png
+mcTraces/*.pickle
+perceptionError/*.pickle
+
