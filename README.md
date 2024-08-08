@@ -85,6 +85,8 @@ A non-exhaustive list of options is given below:
 
 ## `acas`: ACAS-Tab and ACAS-NN benchmarks
 
+The ACAS benchmarks use data from [this repository](https://github.com/sisl/HorizontalCAS).
+
 ### Safe state probability
 
 See the general instructions for safe state probability analysis above.
