@@ -1,15 +1,19 @@
 # GAS: Generating Fast and Accurate Surrogate Models for Autonomous Vehicle Systems
 
-**Authors: Keyur Joshi, Chiao Hsieh, Sayan Mitra, Sasa Misailovic**
+This repository partially reproduces the results shown in our paper:
 
-This repository partially reproduces the results shown in our paper: *GAS: Generating Fast and Accurate Surrogate Models for Autonomous Vehicle Systems*.
+**GAS: Generating Fast and Accurate Surrogate Models for Autonomous Vehicle Systems**\
+Keyur Joshi, Chiao Hsieh, Sayan Mitra, Sasa Misailovic\
+*35th IEEE International Symposium on Software Reliability Engineering (ISSRE 2024)*\
+[Paper](paper/paper.pdf) | [Appendix](paper/appendix.pdf)
+
 The structure of this repository is as follows:
 
 * `acas`: contains the ACAS-Tab and ACAS-NN benchmarks
 * `agbot`: contains the Crop-Monitor benchmark
 * `lanenet`: contains the Cart-Straight and Cart-Curved benchmarks
 * `misc`: contains a scalability experiment
-* `paper`: contains the main paper and the appendix containing additional plots and data.
+* `paper`: contains the [main paper](paper/paper.pdf) and the [appendix](paper/appendix.pdf) containing additional plots and data
 
 Additionally, the `agbot` and `lanenet` folders contain the `perceptionError` subfolder, which contains data for creating the perception model.
 
