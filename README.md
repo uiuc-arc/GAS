@@ -40,14 +40,22 @@ After execution, inspect the last ~10 lines of the output:
 * The `l2Scaled` output shows the l2 error (Column 3 of Table 3)
 * The `corr` output shows the cross correlation (Column 4 of Table 3)
 
+#### Options
+
+You can change various options within the benchmark to see how they affect the results by changing the corresponding variables.
+A non-exhaustive list of options is given below:
+
+* `TimeSteps` (default 100): the number of time steps to simulate
+* `Order` (default 4): the order of the polynomial surrogate model produced by GPC; *note that if you change this option, you will have to remove the hard-coded optimizations for evaluation of order 4 polynomials*
+* `NSamplesEvalGPC` (default 10000): the number of samples to use when evaluating the GPC surrogate model
+* `NSamplesEvalMC` (default 1000): the number of samples to use when evaluating the original vehicle model
+
 ### Sensitivity analysis
 
 Execute `sensitivity.py` in each benchmark folder for sensitivity analysis.
-You can change the `deltaSensitivity` option at the top to `True` for delta sensitivity indices (Column 3 of Table 4), and `False` for normal sensitivity indices (Column 2 of Table 4).
 
 The maximum difference in sensitivity indices is shown in the first two numbers in the second-to-last line of output.
 The numbers presented in Table 4 are the maximum of these two numbers for the corresponding type of sensitivity indiex.
-
 Sensitivity analysis times are presented at the bottom, divided into multiple categories.
 
 For sensitivity analysis with the abstracted vehicle model, the time presented in Column 2 of Table 8 is the sum of the following categories:
@@ -65,6 +73,15 @@ For analytical sensitivity analysis with the GPC model, the time presented in Co
 
 * `'GPCInit'`: time taken to create the GPC model
 * `'GPCSensAn'`: time taken for analytical sensitivity estimation with the GPC model
+
+#### Options
+
+You can change various options within the benchmark to see how they affect the results by changing the corresponding variables.
+A non-exhaustive list of options is given below:
+
+* `Order` (default 4): the order of the polynomial surrogate model produced by GPC; *note that if you change this option, you will have to remove the hard-coded optimizations for evaluation of order 4 polynomials*
+* `NSamplesEval` (default 1000000): the number of samples to use for empirical estimation of sensitivity indices
+* `deltaSensitivity` (default False): set to `True` for delta sensitivity indices (Column 3 of Table 4), or to `False` for normal sensitivity indices (Column 2 of Table 4)
 
 ## `acas`: ACAS-Tab and ACAS-NN benchmarks
 
