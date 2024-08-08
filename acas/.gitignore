@@ -1,6 +1,2 @@
-dumps/
-*.png
-*.jpg
 __pycache__/
-ACASXuTables/
-ACASXuNNs/
+*.png
