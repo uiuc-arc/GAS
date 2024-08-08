@@ -21,6 +21,8 @@ Additionally, the `agbot` and `lanenet` folders contain the `perceptionError` su
 
 ### Requirements
 
+**NOTE: this code has been tested with Python 3.10 and may not work with other versions of Python 3.**
+
 Running the benchmarks requires Python 3 and some packages. To install the packages, you should only need to execute the following command from the root folder of this artifact:
 
     python3 -m pip install -r requirements.txt
