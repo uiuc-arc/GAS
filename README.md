@@ -119,6 +119,8 @@ See the general instructions for sensitivity analysis above.
 
 ## `lanenet`: Cart-Straight and Cart-Curved benchmarks
 
+The Cart benchmarks use the simulator from [this repository](https://gitlab.engr.illinois.edu/gemillins/POLARIS_GEM_e2).
+
 You can use `percept_mdl.py` in the `perceptionError` folder to re-create the perception model using image data captured within Gazebo.
 
 `perceptionModel.py` contains perception models for both straight and curved roads.
