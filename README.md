@@ -22,7 +22,11 @@ Additionally, the `agbot` and `lanenet` folders contain the `perceptionError` su
 ### Requirements
 
 Running the benchmark scripts requires Python 3.12 (we tested with Python 3.12.5 using [Miniconda](https://docs.anaconda.com/miniconda/)).
-You will also need to install some packages by executing the following command from the root folder of this repository:
+You will also need to install some packages by executing **one** of the following commands from the root folder of this repository:
+
+    conda install --channel conda-forge --file requirements.txt
+
+or
 
     python3 -m pip install -r requirements.txt
 
